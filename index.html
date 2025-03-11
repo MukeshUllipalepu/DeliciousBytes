@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="bg-dark text-white text-center py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <div class="logo bg-danger text-white d-flex align-items-center justify-content-center rounded-circle" style="width: 50px; height: 50px; font-weight: bold; font-size: 20px;">
+                        DB
+                    </div>
+                    <span class="ms-2">Delicious Bites</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="r1.avif" class="d-block w-100" alt="Delicious Pizza">
+            </div>
+            <div class="carousel-item">
+                <img src="r2.avif" class="d-block w-100" alt="Tasty Pasta">
+            </div>
+            <div class="carousel-item">
+                <img src="r3.avif" class="d-block w-100" alt="Juicy Burger">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    
+    <!-- Food Categories Section -->
+    <section class="container my-5" id="menu">
+        <h2 class="text-center">Our Food Categories</h2>
+        <div class="row text-center mt-4">
+            <!-- Biryani -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="b1.avif" class="card-img-top" alt="Biryani">
+                    <div class="card-body">
+                        <h5 class="card-title">Biryani</h5>
+                        <a href="biryani.html" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Meals -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="b2.webp" class="card-img-top" alt="Meals">
+                    <div class="card-body">
+                        <h5 class="card-title">Meals</h5>
+                        <a href="meals.html" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Snacks -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="b3.webp" class="card-img-top" alt="Snacks">
+                    <div class="card-body">
+                        <h5 class="card-title">Snacks</h5>
+                        <a href="snacks.html" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tiffins -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="b4.jpg" class="card-img-top" alt="Tiffins">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiffins</h5>
+                        <a href="tiffins.html" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">
+            Welcome to <strong>Delicious Bites</strong>, your go-to destination for mouth-watering dishes made with love and passion.  
+            We bring you a delightful selection of food, from traditional biryanis to delicious snacks, fresh meals, and tasty tiffins.  
+            Every dish is prepared with high-quality ingredients, ensuring a flavorful experience in every bite.  
+        </p>
+        <p class="text-center">
+            <strong>Created by Mukesh Sai</strong>, this platform is designed to make ordering food effortless and budget-friendly.  
+            Whether you're craving a rich biryani or a quick snack, Delicious Bites has got you covered.  
+            Explore our menu, add your favorite dishes to the cart, and enjoy a seamless ordering experience.  
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 <strong>Delicious Bites</strong>. All rights reserved.</p>
+        <p>
+            <strong>Contact Us:</strong><br>
+            📍 Location: Hyderabad, India <br>
+            📞 Phone: +91 98765 43210 <br>
+            📧 Email: <a href="mailto:contact@deliciousbites.com" class="text-white">contact@deliciousbites.com</a>
+        </p>
+        <p>Follow us on:</p>
+        <a href="#" class="text-white me-3">Facebook</a> | 
+        <a href="#" class="text-white me-3">Instagram</a> | 
+        <a href="#" class="text-white">Twitter</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
